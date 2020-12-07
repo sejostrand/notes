@@ -2,4 +2,10 @@ import pandas as pd
 import numpy as np
 
 df = pd.DataFrame(np.random.rand(4, 8)
-print(df)
+
+RENAME COLUMNS
+
+df.column --> calls columns
+#avoid using spaces
+
+df.rename({'column1':'new_name1', 'columns2':'new_name2'}, axis='columns')
